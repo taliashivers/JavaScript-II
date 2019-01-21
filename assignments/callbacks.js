@@ -23,12 +23,19 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
+  // getLength passes the length of the array into the callback.\
+  cb(arr.length);
 }
+
+getLength(items, (lengthOfList) => {
+  console.log(lengthOfList);
+});
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
-}
+items.forEach((item, index) => {
+  alert(item, index);
+});
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
