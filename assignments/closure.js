@@ -14,10 +14,10 @@ sayHello();
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
   let num = 0;
-  function thisisahorriblenameforafunction() {
+  function theFunction() {
     return num++;
   }
-  return thisisahorriblenameforafunction;        
+  return theFunction;        
 };
 const newCounter = counter();
 newCounter();
